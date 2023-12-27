@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
-#root {
+#root div {
   width: 100%;
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
