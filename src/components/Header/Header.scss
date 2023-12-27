@@ -1,23 +1,19 @@
-#header {
-    width: 100%;
+div #header {
     height: 68px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin: 50px 100px 0 100px;
+    display: flex;
+    align-content: space-between;
 
     .logo {
         width: 210.32px;
         height: 68px;
+        margin-left: 100px;
     }
 
     #header-link {
         width: 309px;
         height: 34px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-right: 100px;
 
         a {
             color: #ff6060;
