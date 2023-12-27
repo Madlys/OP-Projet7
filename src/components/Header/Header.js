@@ -1,5 +1,5 @@
-import '../styles/Header.scss'
-import logo from '../assets/logoKasa.png'
+import './Header.scss'
+import logo from '../../assets/logoKasa.png'
 
 function Header() {
     return <div id="header">
