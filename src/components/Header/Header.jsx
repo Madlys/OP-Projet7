@@ -5,8 +5,8 @@ function Header() {
     return <div id="header">
         <img className='logo' src={logo} alt='logo Kasa'></img>
         <div id="header-link">
-            <a href=''>Accueil</a>
-            <a href=''>A propos</a>
+            <a href='' id='accueilLink'>Accueil</a>
+            <a href='' id='aproposLink'>A propos</a>
         </div>
     </div>
 }

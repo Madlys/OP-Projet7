@@ -1,12 +1,10 @@
 import './Banner.scss'
-import homeImage from '../../assets/homeImageBanner.png'
-import aproposImage from '../../assets/aproposImageBanner.png'
 
-function Banner({homeImage,aproposImage}) {
+function Banner(prop) {
+    const title = (prop.title) ? prop.title : null
     return <div id="banner">
-        const image = () ? homeImage : aproposImage
-        <img className='bannerImg' src={image} alt="banner image"></img>
-        <h1>Bannière ici</h1>
+        <img className='bannerImg' src={prop.banner} alt="banner image"></img>
+        <div className='bannerText'>{title}</div>
     </div>
 }
 

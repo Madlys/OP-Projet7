@@ -1,21 +1,29 @@
 div #header {
     height: 68px;
-    margin: 50px 100px 0 100px;
+    margin: 40px 100px 0 100px;
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
 
     .logo {
         width: 210.32px;
         height: 68px;
-        margin-left: 100px;
     }
 
     #header-link {
-        width: 309px;
+        width: 25%;
         height: 34px;
-        margin-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        a {
+        #accueilLink {
+            width: 134px;
+            text-align: end;
+        }
+
+        #aproposLink,
+        #accueilLink {
             color: #ff6060;
             text-decoration: none;
 
@@ -23,6 +31,8 @@ div #header {
                 text-decoration: underline;
                 text-decoration-thickness: 1px;
             }
+
         }
+
     }
 }
