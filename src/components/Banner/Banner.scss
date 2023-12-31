@@ -1,11 +1,13 @@
-div #banner {
-    height: 223px;
-    margin: 80px 100px 0 100px;
-
-    //with text
+div #bannerWithText {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
+}
+
+div #bannerWithoutText,
+div #bannerWithText {
+    height: 223px;
+    margin: 80px 100px 0 100px;
 
     .bannerImg {
         height: 100%;

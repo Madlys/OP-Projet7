@@ -1,7 +1,7 @@
 import './Banner.scss'
 
 function Banner(prop) {
-    return <div id="banner">
+    return <div id={prop.id}>
         <img className='bannerImg' src={prop.banner} alt="banner image"></img>
         {/* if home -> text */}
         {prop.title ? <div className='bannerTextBackground'></div> : null}

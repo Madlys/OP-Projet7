@@ -7,7 +7,7 @@ function About() {
     return (
         <div>
             <Header />
-            <Banner banner={aboutImage} />
+            <Banner id={"bannerWithoutText"} banner={aboutImage} />
             <Footer />
         </div>
     )
