@@ -1,23 +1,27 @@
-#logementText {
-    width: 84.67%;
+#logementInfos {
     height: 77px;
-    margin: 30px 0 0 100px;
+    margin: 30px 100px 0 100px;
+    display: flex;
 
-    #logementTitle,
-    #logementLocation {
-        margin: 0;
-        font-family: Montserrat;
-        color: #FF6060;
-        font-weight: 500;
-    }
+    #logementText {
+        width: 84.67%;
 
-    #logementTitle {
-        font-size: 36px;
-        line-height: 51px;
-    }
+        #logementTitle,
+        #logementLocation {
+            margin: 0;
+            font-family: Montserrat;
+            color: #FF6060;
+            font-weight: 500;
+        }
 
-    #logementLocation {
-        font-size: 18px;
-        line-height: 26px;
+        #logementTitle {
+            font-size: 36px;
+            line-height: 51px;
+        }
+
+        #logementLocation {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 }
