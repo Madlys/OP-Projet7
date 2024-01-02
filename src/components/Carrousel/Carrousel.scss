@@ -1,0 +1,47 @@
+#carousel {
+    height: 415px;
+    margin: 10px 100px 0 100px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+
+    #itemList {
+        white-space: nowrap;
+    }
+
+    .item {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        height: 415px;
+    }
+
+    #prevBtn,
+    #nextBtn {
+        border: none;
+        cursor: pointer;
+        background: none;
+        position: absolute;
+        width: 96px;
+        height: 119.64px;
+        top: 148.3px;
+    }
+
+    #prevBtn {
+        left: 0;
+    }
+
+    #nextBtn {
+        right: 0;
+    }
+
+    #indicator {
+        position: absolute;
+        top: 357.67px;
+        left: 50%;
+        color: white;
+        cursor: default;
+        font-family: Montserrat;
+        font-size: 18px;
+    }
+}
