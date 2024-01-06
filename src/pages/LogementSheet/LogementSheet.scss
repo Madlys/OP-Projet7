@@ -1,7 +1,9 @@
-#logementInfos {
+#titleAndHost {
     height: 77px;
     margin: 30px 100px 0 100px;
     display: flex;
+
+    justify-content: space-between;
 
     #logementText {
         width: 84.67%;
@@ -24,4 +26,12 @@
             line-height: 26px;
         }
     }
+}
+
+#tagAndStars {
+    height: 36px;
+    margin: 0 100px 0 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
