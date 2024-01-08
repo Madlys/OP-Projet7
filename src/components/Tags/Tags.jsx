@@ -1,4 +1,4 @@
-import "./Tag.scss"
+import "./Tags.scss"
 
 function Tag({ logement }) {
     const Tags = logement.tags;
