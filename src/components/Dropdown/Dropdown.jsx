@@ -17,7 +17,7 @@ function Dropdown({ title, content }) {
         <div className="dropdown">
             <div onClick={dropdown} className="dropdownBar">
                 <p>{title}</p>
-                <img className={toggle ? "arrowDown" : "arrowUup"} src={arrow}></img>
+                <img className={toggle ? "arrowDown" : "arrowUp"} src={arrow}></img>
             </div>
             <div className={toggle ? "dropdownContent contentDown" : "dropdownContent contentUp"}>
                 {Array.isArray(content) ?
