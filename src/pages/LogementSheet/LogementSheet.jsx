@@ -6,6 +6,7 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import Host from "../../components/Host/Host";
 import Tag from "../../components/Tag/Tag";
 import Stars from "../../components/Stars/Stars";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 function Logement() {
     const { id } = useParams();
@@ -23,8 +24,12 @@ function Logement() {
                     <Host logement={logement}></Host>
                 </div>
                 <div id="tagAndStars">
-                    <Tag logement={logement}/>
-                    <Stars logement={logement}/>
+                    <Tag logement={logement} />
+                    <Stars logement={logement} />
+                </div>
+                <div id="dropdownContainer">
+                    <Dropdown title="Description" content={logement.description} />
+                    <Dropdown title="Equipements" content={logement.equipments} />
                 </div>
             </div>
         </div>

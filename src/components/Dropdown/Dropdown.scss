@@ -1,0 +1,109 @@
+.dropdown {
+    width: 46.93%;
+    margin-top: 25px;
+
+    .dropdownBar {
+        height: 52px;
+        border-radius: 10px;
+        background-color: #FF6060;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        p {
+            font-weight: 500;
+            color: #FFFFFF;
+            margin: 20px;
+        }
+
+        img {
+            width: 24px;
+            height: 13.71px;
+            border: none;
+            background: none;
+            margin: 20px;
+        }
+
+        .arrowDown {
+            transform: rotate(-180deg);
+            transition: transform 0.6s;
+        }
+
+        .arrowUp {
+            transform: rotate(0deg);
+            transition: transform 0.6s;
+        }
+    }
+
+    .dropdownContent {
+        font-weight: 400;
+        height: 249px;
+        background-color: #F6F6F6;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        color: #FF6060;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 25px;
+        }
+
+        p {
+            margin: 25px;
+        }
+    }
+
+    .contentDown {
+        transition: height .4s ease;
+        animation: 2s show ease-out;
+
+        @keyframes show {
+            0% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .contentUp {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        animation: 2s hide ease-out;
+
+        @keyframes hide {
+            0% {
+                opacity: 1;
+            }
+
+            10% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+    }
+
+    .dropdownBar p,
+    .dropdownContent {
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+}
