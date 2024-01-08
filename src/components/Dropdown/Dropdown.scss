@@ -1,5 +1,4 @@
 .dropdown {
-    width: 46.93%;
     margin-top: 25px;
 
     .dropdownBar {
@@ -38,7 +37,6 @@
 
     .dropdownContent {
         font-weight: 400;
-        height: 249px;
         background-color: #F6F6F6;
         border-radius: 10px;
         display: flex;
@@ -57,6 +55,7 @@
     }
 
     .contentDown {
+        min-height: 117px;
         transition: height .4s ease;
         animation: 2s show ease-out;
 

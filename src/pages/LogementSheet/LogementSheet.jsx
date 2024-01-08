@@ -28,7 +28,7 @@ function Logement() {
                     <Tags logement={logement} />
                     <Stars logement={logement} />
                 </div>
-                <div id="dropdownContainer">
+                <div id="dropdownContainerLogement">
                     <Dropdown title="Description" content={logement.description} />
                     <Dropdown title="Equipements" content={logement.equipments} />
                 </div>
