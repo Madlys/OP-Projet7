@@ -1,7 +1,7 @@
-.dropdown {
+.collapse {
     margin-top: 25px;
 
-    .dropdownBar {
+    .collapseBar {
         height: 52px;
         border-radius: 10px;
         background-color: #FF6060;
@@ -35,7 +35,7 @@
         }
     }
 
-    .dropdownContent {
+    .collapseContent {
         font-weight: 400;
         background-color: #F6F6F6;
         border-radius: 10px;
@@ -96,8 +96,8 @@
 
     }
 
-    .dropdownBar p,
-    .dropdownContent {
+    .collapseBar p,
+    .collapseContent {
         font-family: Montserrat;
         font-size: 18px;
         line-height: 26px;

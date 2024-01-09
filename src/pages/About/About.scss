@@ -1,11 +1,11 @@
-#dropdownContainerAbout {
+#collapseContainerAbout {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 200px 0 200px;
 
-    .dropdownBar p,
-    .dropdownContent {
+    .collapseBar p,
+    .collapseContent {
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 400;

@@ -1,5 +1,5 @@
-import "./Dropdown.scss"
-import arrow from "../../assets/dropdownArrow.png"
+import "./Collapse.scss"
+import arrow from "../../assets/collapseArrow.png"
 import React, { useState } from 'react'
 
 const useToggle = (initialState) => {
@@ -8,15 +8,15 @@ const useToggle = (initialState) => {
     return [toggleValue, toggler]
 };
 
-function Dropdown({ title, content }) {
-    const [toggle, dropdown] = useToggle();
+function Collapse({ title, content }) {
+    const [toggle, collapse] = useToggle();
     return (
-        <div className="dropdown">
-            <div onClick={dropdown} className="dropdownBar">
+        <div className="collapse">
+            <div onClick={collapse} className="collapseBar">
                 <p>{title}</p>
                 <img className={toggle ? "arrowDown" : "arrowUp"} src={arrow}></img>
             </div>
-            <div className={toggle ? "dropdownContent contentDown" : "dropdownContent contentUp"}>
+            <div className={toggle ? "collapseContent contentDown" : "collapseContent contentUp"}>
                 {Array.isArray(content) ?
                     <ul>
                         {content.map((li) => <li>{li}</li>)}
@@ -28,4 +28,4 @@ function Dropdown({ title, content }) {
     )
 }
 
-export default Dropdown
+export default Collapse

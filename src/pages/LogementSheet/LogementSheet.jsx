@@ -6,7 +6,7 @@ import Slideshow from "../../components/Slideshow/Slideshow";
 import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags";
 import Stars from "../../components/Stars/Stars";
-import Dropdown from "../../components/Dropdown/Dropdown";
+import Collapse from "../../components/Collapse/Collapse";
 import Footer from "../../components/Footer/Footer"
 
 function Logement() {
@@ -28,9 +28,9 @@ function Logement() {
                     <Tags logement={logement} />
                     <Stars logement={logement} />
                 </div>
-                <div id="dropdownContainerLogement">
-                    <Dropdown title="Description" content={logement.description} />
-                    <Dropdown title="Equipements" content={logement.equipments} />
+                <div id="collapseContainerLogement">
+                    <Collapse title="Description" content={logement.description} />
+                    <Collapse title="Equipements" content={logement.equipments} />
                 </div>
                 <Footer />
             </div>
