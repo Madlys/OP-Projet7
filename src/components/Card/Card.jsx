@@ -3,7 +3,7 @@ import logements from '../../logements.json'
 import { Link } from 'react-router-dom'
 
 function Card() {
-    return <div id="cards">
+    return <nav id="cards">
         {logements.map((logement) =>
             <Link to={`/logement/${logement.id}`} className='card'>
                 <img className='cardImg' src={logement.cover} alt="photo du logement"></img>
@@ -11,7 +11,7 @@ function Card() {
                 <div id={logement.id} className='cardTitle'>{logement.title}</div>
             </Link>
         )}
-    </div>
+    </nav>
 }
 
 export default Card
