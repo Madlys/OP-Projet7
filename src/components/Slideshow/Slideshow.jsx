@@ -22,9 +22,18 @@ function Slideshow({logement}) {
                 <img className='item' src={img} />
             )}
         </div>
-        <button onClick={() => { updateIndex(activeIndex - 1) }} id='prevBtn'><img src={prevBtn}></img></button>
-        <div id='indicator'>{activeIndex + 1}/{slides.length}</div>
-        <button onClick={() => { updateIndex(activeIndex + 1) }} id='nextBtn'><img src={nextBtn} ></img></button>
+        {slides.length > 1
+            ? <button onClick={() => { updateIndex(activeIndex - 1) }} id='prevBtn'><img src={prevBtn}></img></button>
+            : null
+        }
+        {slides.length > 1
+            ? <div id='indicator'>{activeIndex + 1}/{slides.length}</div>
+            : null
+        }
+        {slides.length > 1
+            ? <button onClick={() => { updateIndex(activeIndex + 1) }} id='nextBtn'><img src={nextBtn} ></img></button>
+            : null
+        }
     </div>
 }
 
