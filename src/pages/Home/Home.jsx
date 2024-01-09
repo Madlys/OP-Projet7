@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Header />
       <Banner id={"bannerWithText"} banner={homeImage} title={"Chez vous, partout et ailleurs"} />
-      <Card></Card>
+      <Card />
       <Footer />
     </div>
   )
