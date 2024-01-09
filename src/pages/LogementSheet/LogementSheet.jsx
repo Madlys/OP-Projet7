@@ -2,7 +2,7 @@ import "./LogementSheet.scss"
 import { useParams } from "react-router-dom";
 import logements from "../../logements.json";
 import Header from "../../components/Header/Header";
-import Carrousel from "../../components/Carrousel/Carrousel";
+import Slideshow from "../../components/Slideshow/Slideshow";
 import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags";
 import Stars from "../../components/Stars/Stars";
@@ -15,7 +15,7 @@ function Logement() {
     return (
         <div>
             <Header/>
-            <Carrousel logement={logement}></Carrousel>
+            <Slideshow logement={logement}></Slideshow>
             <div id="logementInfos">
                 <div id="titleAndHost">
                     <div id="logementText">

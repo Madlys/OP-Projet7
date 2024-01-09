@@ -1,9 +1,9 @@
-import './Carrousel.scss'
+import './Slideshow.scss'
 import prevBtn from '../../assets/prevBtn.png'
 import nextBtn from '../../assets/nextBtn.png'
 import { useState } from 'react';
 
-function Carrousel({logement}) {
+function Slideshow({logement}) {
     const slides = logement.pictures;
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -28,4 +28,4 @@ function Carrousel({logement}) {
     </div>
 }
 
-export default Carrousel
+export default Slideshow
