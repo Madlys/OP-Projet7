@@ -3,15 +3,15 @@ import prevBtn from '../../assets/prevBtn.png'
 import nextBtn from '../../assets/nextBtn.png'
 import { useState } from 'react';
 
-function Carrousel(prop) {
-    const slides = prop.logement.pictures
+function Carrousel({logement}) {
+    const slides = logement.pictures;
 
     const [activeIndex, setActiveIndex] = useState(0);
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
-            newIndex = 0;
+            newIndex = slides.length -1;
         } else if (newIndex >= slides.length) {
-            newIndex = slides.length - 1;
+            newIndex = 0;
         }
         setActiveIndex(newIndex);
     }
