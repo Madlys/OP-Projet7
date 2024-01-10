@@ -14,7 +14,7 @@ function Logement() {
     const logement = logements.find((logement) => logement.id == id);
     return (
         <div>
-            <Header/>
+            <Header />
             <Slideshow logement={logement}></Slideshow>
             <div id="logementInfos">
                 <div id="titleAndHost">
