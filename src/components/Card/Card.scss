@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #cards {
     background: #F6F6F6;
     margin: 80px 100px 0 100px;
@@ -33,7 +35,7 @@
         }
 
         .cardTitle {
-            font-family: Montserrat;
+            font-family: $font;
             font-size: 18px;
             line-height: 25.67px;
             position: absolute;

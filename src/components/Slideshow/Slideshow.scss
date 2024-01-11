@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #carousel {
     height: 415px;
     margin: 10px 100px 0 100px;
@@ -41,7 +43,7 @@
         left: 50%;
         color: white;
         cursor: default;
-        font-family: Montserrat;
+        font-family: $font;
         font-size: 18px;
     }
 }

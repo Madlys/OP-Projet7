@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 div #bannerWithText {
     position: relative;
     text-align: center;
@@ -33,7 +35,7 @@ div #bannerWithText {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: Montserrat;
+        font-family: $font;
         font-size: 48px;
         font-weight: 500;
         line-height: 68px;

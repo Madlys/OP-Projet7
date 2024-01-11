@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #footer {
     height: 209px;
     margin-top: 50px;
@@ -13,7 +15,7 @@
     }
 
     #footerText {
-        font-family: Montserrat;
+        font-family: $font;
         font-size: 24px;
         font-weight: 500;
         color: white;
