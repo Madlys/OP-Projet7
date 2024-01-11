@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #titleAndHost {
     height: 77px;
     margin: 30px 100px 0 100px;
@@ -12,7 +14,7 @@
         #logementLocation {
             margin: 0;
             font-family: Montserrat;
-            color: #FF6060;
+            color: $color-primary;
             font-weight: 500;
         }
 

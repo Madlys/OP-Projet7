@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #tags {
     display: flex;
     .tag {
@@ -10,7 +12,7 @@
         letter-spacing: 0em;
         text-align: center;
         color: white;
-        background-color: #FF6060;
+        background-color: $color-primary;
         border-radius: 10px;
         margin-right: 10px;
     }

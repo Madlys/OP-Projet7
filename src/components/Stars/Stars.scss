@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 #stars {
     width: 196px;
     height: 36px;
@@ -7,7 +9,7 @@
     .star {
         width: 24.75px;
         height: 24px;
-        color: #FF6060;
+        color: $color-primary;
         margin: 5.62px;
     }
 }

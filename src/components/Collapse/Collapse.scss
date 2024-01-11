@@ -1,10 +1,12 @@
+@import "../../variables.scss";
+
 .collapse {
     margin-top: 25px;
 
     .collapseBar {
         height: 52px;
         border-radius: 10px;
-        background-color: #FF6060;
+        background-color: $color-primary;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -41,7 +43,7 @@
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        color: #FF6060;
+        color: $color-primary;
 
         ul {
             list-style: none;

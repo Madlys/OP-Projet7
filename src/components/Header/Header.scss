@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 div #header {
     height: 68px;
     margin: 40px 100px 0 100px;
@@ -24,7 +26,7 @@ div #header {
 
         #aproposLink,
         #accueilLink {
-            color: #ff6060;
+            color: $color-primary;
             text-decoration: none;
             font-family: Montserrat;
             font-size: 24px;

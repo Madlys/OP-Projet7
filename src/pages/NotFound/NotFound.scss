@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 main {
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@ main {
         font-weight: 500;
         letter-spacing: 0em;
         text-align: left;
-        color: #FF6060;
+        color: $color-primary;
     }
 
     h1 {
