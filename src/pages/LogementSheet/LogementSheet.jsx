@@ -7,11 +7,17 @@ import Host from "../../components/Host/Host";
 import Tags from "../../components/Tags/Tags";
 import Stars from "../../components/Stars/Stars";
 import Collapse from "../../components/Collapse/Collapse";
-import Footer from "../../components/Footer/Footer"
+import Footer from "../../components/Footer/Footer";
+import { Navigate } from "react-router-dom";
 
 function Logement() {
     const { id } = useParams();
-    const logement = logements.find((logement) => logement.id == id);
+    const logement = logements.find((logement) => logement.id == id)
+    if (!logement) {
+        return (
+            <Navigate to="*" />
+        )
+    }
     return (
         <div>
             <Header />
