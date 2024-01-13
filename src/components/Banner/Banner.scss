@@ -4,12 +4,23 @@ div #bannerWithText {
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
+    text-wrap: wrap;
+
+
+
+    @media (max-width: map-get($breakpoints, mobile)) {
+        min-width: 256.28px;
+    }
 }
 
 div #bannerWithoutText,
 div #bannerWithText {
     height: 223px;
-    margin: 80px 100px 0 100px;
+    margin: 80px 7% 0 7%;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        height: 111px;
+    }
 
     .bannerImg {
         height: 100%;
@@ -39,5 +50,23 @@ div #bannerWithText {
         font-size: 48px;
         font-weight: 500;
         line-height: 68px;
+        width: 705px;
+        height: 68px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 64.77%;
+            height: 48px;
+            font-size: 24px;
+            line-height: 50px;
+        }
+
+        @media (max-width: 503px) {
+            text-align: left;
+            line-height: 24px;
+        }
+        @media (max-width: 302px) {
+            top:40%;
+        }
+
     }
 }

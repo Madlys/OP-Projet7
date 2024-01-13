@@ -11,7 +11,7 @@ div #header {
         width: 210.32px;
         height: 68px;
 
-        @media (max-width: map-get($breakpoints, mobile)) {
+        @media (max-width: map-get($breakpoints, tablet)) {
             width: 145px;
             height: 47px;
         }
@@ -33,13 +33,21 @@ div #header {
             width: 134px;
             text-align: end;
 
+            @media (min-width: map-get($breakpoints, mobile)) and (max-width: 530px) {
+                width: 43.36%;
+            }
+
             @media (max-width: map-get($breakpoints, mobile)) {
-                width: 71px;
+                width: 51.14%;
             }
         }
 
         #aproposLink {
             width: 116px;
+
+            @media (min-width: map-get($breakpoints, mobile)) and (max-width: 530px) {
+                width: 53%;
+            }
 
             @media (max-width: map-get($breakpoints, mobile)) {
                 width: 59px;
@@ -52,7 +60,7 @@ div #header {
             text-decoration: none;
             font-family: $font;
             font-size: 24px;
-            text-align:right;
+            text-align: right;
 
             @media (max-width: map-get($breakpoints, mobile)) {
                 text-transform: uppercase;
