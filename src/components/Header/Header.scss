@@ -2,7 +2,7 @@
 
 div #header {
     height: 68px;
-    margin: 40px 100px 0 100px;
+    margin: 40px 7% 0 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,18 +10,40 @@ div #header {
     #logoHeader {
         width: 210.32px;
         height: 68px;
+
+        @media (max-width: map-get($breakpoints, mobile)) {
+            width: 145px;
+            height: 47px;
+        }
     }
 
     #header-link {
-        width: 25%;
+        width: 309px;
         height: 34px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: map-get($breakpoints, mobile)) {
+            width: 140px;
+            height: 17px;
+        }
+
         #accueilLink {
             width: 134px;
             text-align: end;
+
+            @media (max-width: map-get($breakpoints, mobile)) {
+                width: 71px;
+            }
+        }
+
+        #aproposLink {
+            width: 116px;
+
+            @media (max-width: map-get($breakpoints, mobile)) {
+                width: 59px;
+            }
         }
 
         #aproposLink,
@@ -30,13 +52,17 @@ div #header {
             text-decoration: none;
             font-family: $font;
             font-size: 24px;
+            text-align:right;
+
+            @media (max-width: map-get($breakpoints, mobile)) {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
 
             &:hover {
                 text-decoration: underline;
                 text-decoration-thickness: 1px;
             }
-
         }
-
     }
 }
