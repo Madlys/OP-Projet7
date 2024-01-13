@@ -6,8 +6,6 @@ div #bannerWithText {
     color: rgb(255, 255, 255);
     text-wrap: wrap;
 
-
-
     @media (max-width: map-get($breakpoints, mobile)) {
         min-width: 256.28px;
     }
@@ -20,6 +18,7 @@ div #bannerWithText {
 
     @media (max-width: map-get($breakpoints, tablet)) {
         height: 111px;
+        margin-top: 5px;
     }
 
     .bannerImg {
@@ -27,6 +26,10 @@ div #bannerWithText {
         width: 100%;
         object-fit: cover;
         border-radius: 25px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            border-radius: 10px;
+        }
     }
 
     //if text
@@ -39,6 +42,10 @@ div #bannerWithText {
         background-color: black;
         opacity: .3;
         border-radius: 25px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            border-radius: 10px;
+        }
     }
 
     .bannerText {
@@ -64,8 +71,9 @@ div #bannerWithText {
             text-align: left;
             line-height: 24px;
         }
+
         @media (max-width: 302px) {
-            top:40%;
+            top: 40%;
         }
 
     }

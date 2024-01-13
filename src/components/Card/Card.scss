@@ -2,12 +2,27 @@
 
 #cards {
     background: #F6F6F6;
-    margin: 80px 100px 0 100px;
+    margin: 80px 7% 0 7%;
     padding: 50px 4% 50px 4%;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 50px 8.87%;
+    row-gap: 50px;
     border-radius: 25px;
+
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        margin-top: 25px;
+        padding: 35px 4% 35px 4%;
+        row-gap: 30px;
+    }
+
+    @media (max-width: map-get($breakpoints, mobile)) {
+        flex-direction: column;
+        padding: 0;
+        background-color: white;
+        min-width: 256.28px;
+    }
 
     .card {
         width: 27.4%;
@@ -16,6 +31,13 @@
         position: relative;
         text-align: center;
         color: white;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 43.32%;
+        }
+        @media (max-width: map-get($breakpoints, mobile)) {
+            width: 100%;
+        }
 
         .cardImg {
             height: 100%;
@@ -40,7 +62,7 @@
             line-height: 25.67px;
             position: absolute;
             bottom: 10px;
-            left:10px;
+            left: 10px;
             margin-right: 10px;
         }
     }
