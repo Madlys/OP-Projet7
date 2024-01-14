@@ -2,10 +2,15 @@
 
 #carousel {
     height: 415px;
-    margin: 10px 100px 0 100px;
+    margin: 10px 7% 0 7%;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        height: 255px;
+        border-radius: 10px;
+    }
 
     #itemList {
         white-space: nowrap;
@@ -16,6 +21,11 @@
         object-fit: cover;
         border-radius: 25px;
         height: 415px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            height: 255px;
+            border-radius: 10px;
+        }
     }
 
     #prevBtn,
@@ -27,6 +37,22 @@
         width: 96px;
         height: 119.64px;
         top: 148.3px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 24px;
+            height: 24px;
+            top: 116px;
+        }
+
+        img {
+            width: 46.68px;
+            height: 79.2px;
+
+            @media (max-width: map-get($breakpoints, tablet)) {
+                width: 11.67px;
+                height: 19.8px;
+            }
+        }
     }
 
     #prevBtn {
@@ -45,5 +71,9 @@
         cursor: default;
         font-family: $font;
         font-size: 18px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            display: none;
+        }
     }
 }
