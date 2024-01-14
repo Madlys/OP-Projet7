@@ -1,80 +1,87 @@
 @import "../../variables.scss";
 
 div #bannerWithText {
+    height: 223px;
+    margin: 80px 7% 0 7%;
     position: relative;
     text-align: center;
     color: rgb(255, 255, 255);
     text-wrap: wrap;
-
-    @media (max-width: map-get($breakpoints, mobile)) {
-        min-width: 256.28px;
-    }
-}
-
-div #bannerWithoutText,
-div #bannerWithText {
-    height: 223px;
-    margin: 80px 7% 0 7%;
 
     @media (max-width: map-get($breakpoints, tablet)) {
         height: 111px;
         margin-top: 5px;
     }
 
-    .bannerImg {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 25px;
+    @media (max-width: map-get($breakpoints, mobile)) {
+        min-width: 256.28px;
+    }
+}
 
-        @media (max-width: map-get($breakpoints, tablet)) {
-            border-radius: 10px;
-        }
+div #bannerWithoutText {
+    position: relative;
+    height: 223px;
+    margin: 80px 7% 0 7%;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        margin-top: 5px;
     }
 
-    //if text
-    .bannerTextBackground {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: .3;
-        border-radius: 25px;
+}
 
-        @media (max-width: map-get($breakpoints, tablet)) {
-            border-radius: 10px;
-        }
+.bannerImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        border-radius: 10px;
+    }
+}
+
+//if text
+.bannerBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .3;
+    border-radius: 25px;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        border-radius: 10px;
+    }
+}
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $font;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    width: 705px;
+    height: 68px;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        width: 64.77%;
+        height: 48px;
+        font-size: 24px;
+        line-height: 50px;
     }
 
-    .bannerText {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: $font;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 68px;
-        width: 705px;
-        height: 68px;
-
-        @media (max-width: map-get($breakpoints, tablet)) {
-            width: 64.77%;
-            height: 48px;
-            font-size: 24px;
-            line-height: 50px;
-        }
-
-        @media (max-width: 503px) {
-            text-align: left;
-            line-height: 24px;
-        }
-
-        @media (max-width: 302px) {
-            top: 40%;
-        }
-
+    @media (max-width: 503px) {
+        text-align: left;
+        line-height: 24px;
     }
+
+    @media (max-width: 302px) {
+        top: 40%;
+    }
+
 }
