@@ -22,24 +22,24 @@ function Logement() {
         <div>
             <Header />
             <Slideshow logement={logement}></Slideshow>
-            <div id="logementInfos">
-                <div id="titleAndHost">
+            <div id="logementInfosHeader">
+                <div id="titleAndTags">
                     <div id="logementText">
                         <h1 id="logementTitle">{logement.title}</h1>
                         <p id="logementLocation">{logement.location}</p>
+                        <Tags logement={logement} />
                     </div>
-                    <Host logement={logement}></Host>
                 </div>
-                <div id="tagAndStars">
-                    <Tags logement={logement} />
+                <div id="hostAndStars">
+                    <Host logement={logement}></Host>
                     <Stars logement={logement} />
                 </div>
-                <div id="collapseContainerLogement">
-                    <Collapse title="Description" content={logement.description} />
-                    <Collapse title="Equipements" content={logement.equipments} />
-                </div>
-                <Footer />
             </div>
+            <div id="logementInfosCollapse">
+                <Collapse title="Description" content={logement.description} />
+                <Collapse title="Equipements" content={logement.equipments} />
+            </div>
+            <Footer />
         </div>
     )
 }

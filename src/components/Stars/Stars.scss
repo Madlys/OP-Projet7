@@ -6,10 +6,21 @@
     display: flex;
     justify-content: flex-end;
 
+    @media (max-width: map-get($breakpoints, tablet)) {
+        justify-content: flex-start;
+        width: 98px;
+        height: 18px;
+    }
+
     .star {
         width: 24.75px;
         height: 24px;
         color: $color-primary;
         margin: 5.62px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 18px;
+            height: 18px;
+        }
     }
 }

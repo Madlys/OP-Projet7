@@ -1,49 +1,115 @@
 @import "../../variables.scss";
 
-#titleAndHost {
-    height: 77px;
-    margin: 30px 100px 0 100px;
+#logementInfosHeader {
     display: flex;
-
     justify-content: space-between;
+    margin: 30px 7% 0 7%;
 
-    #logementText {
-        width: 84.67%;
+    @media (max-width: map-get($breakpoints, tablet)) {
+        flex-direction: column;
+        margin-top: 17px;
+    }
 
-        #logementTitle,
-        #logementLocation {
-            margin: 0;
-            font-family: $font;
-            color: $color-primary;
-            font-weight: 500;
+    #titleAndTags {
+        display: flex;
+        flex-direction: column;
+
+        #logementText {
+            width: 100%;
+
+            #logementTitle,
+            #logementLocation {
+                margin: 0;
+                font-family: $font;
+                color: $color-primary;
+                font-weight: 500;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            #logementTitle {
+                font-size: 36px;
+                line-height: 51.34px;
+
+                @media (max-width: map-get($breakpoints, tablet)) {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+
+            #logementLocation {
+                font-size: 18px;
+                line-height: 25.67px;
+
+                @media (max-width: map-get($breakpoints, tablet)) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
         }
+    }
 
-        #logementTitle {
-            font-size: 36px;
-            line-height: 51px;
-        }
+    #hostAndStars {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
-        #logementLocation {
-            font-size: 18px;
-            line-height: 26px;
+        @media (max-width: map-get($breakpoints, tablet)) {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }
 
-#tagAndStars {
-    height: 36px;
-    margin: 0 100px 0 100px;
+#logementInfosCollapse {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-}
+    margin: 0 7% 0 7%;
 
-#collapseContainerLogement {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 100px 0 100px;
+    @media (max-width: map-get($breakpoints, tablet)) {
+        flex-direction: column;
+    }
 
     >* {
         width: 46.93%;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            font-family: $font;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 100%;
+        }
     }
+
+    .collapseBar {
+        @media (max-width: map-get($breakpoints, tablet)) {
+            height: 29.93px;
+        }
+
+        img {
+            @media (max-width: map-get($breakpoints, tablet)) {
+                width: 16px;
+                height: 9.14px;
+            }
+        }
+    }
+
+    .collapseBar p {
+        @media (max-width: map-get($breakpoints, tablet)) {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 19px;
+        }
+    }
+
+    .collapseContent {
+        @media (max-width: map-get($breakpoints, tablet)) {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+
+
 }

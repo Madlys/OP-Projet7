@@ -5,7 +5,12 @@
     height: 77px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+        width: 36.13%;
+        height: 33px;
+    }
 
     #hostName {
         width: 93px;
@@ -18,11 +23,23 @@
         text-align: right;
         color: $color-primary;
         margin: 5px 10px 0 0;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            height: 33px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+
     }
 
     #hostImg {
         width: 60px;
         height: 60px;
         border-radius: 50%;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 32px;
+            height: 32px;
+        }
     }
 }

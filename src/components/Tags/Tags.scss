@@ -2,6 +2,7 @@
 
 #tags {
     display: flex;
+
     .tag {
         width: 115px;
         height: 25px;
@@ -15,5 +16,12 @@
         background-color: $color-primary;
         border-radius: 10px;
         margin-right: 10px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 84px;
+            height: 18px;
+            font-size: 10px;
+            line-height: 18px;
+        }
     }
 }
