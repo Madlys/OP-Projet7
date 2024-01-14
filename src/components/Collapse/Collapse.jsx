@@ -19,7 +19,7 @@ function Collapse({ title, content }) {
             <div className={toggle ? "collapseContent contentDown" : "collapseContent contentUp"}>
                 {Array.isArray(content) ?
                     <ul>
-                        {content.map((li) => <li>{li}</li>)}
+                        {content.map((li) => <li key={`${title}-${li}`}>{li}</li>)}
                     </ul>
                     :
                     <p>{content}</p>}

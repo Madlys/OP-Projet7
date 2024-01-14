@@ -5,7 +5,7 @@ function Tag({ logement }) {
     return (
         <div id="tags">
             {Tags.map((tag) =>
-                <p className="tag">{tag}</p>
+                <p key={`${logement.id}-tag-${tag}`} className="tag">{tag}</p>
             )}
         </div>
     )

@@ -18,8 +18,8 @@ function Slideshow({logement}) {
 
     return <div id='carousel'>
         <div id='itemList' style={{ transform: `translate(-${activeIndex * 100}%)` }}>
-            {slides.map((img) =>
-                <img className='item' src={img} />
+            {slides.map((img, index) =>
+                <img key={`${logement.id}-img-${index}`} className='item' src={img} />
             )}
         </div>
         {slides.length > 1
