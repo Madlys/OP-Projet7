@@ -5,10 +5,19 @@ main {
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: map-get($breakpoints, tablet)) {
+        margin: 0 7% 0 7%;
+    }
+
     img {
         width: 597px;
         height: 263px;
         margin-top: 175px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 198px;
+            height: 99px;
+        }
     }
 
     h1,
@@ -16,22 +25,34 @@ main {
         font-family: $font;
         font-weight: 500;
         letter-spacing: 0em;
-        text-align: left;
         color: $color-primary;
+        text-align: left;
     }
 
     h1 {
         font-size: 36px;
         line-height: 51px;
         margin-top: 75px;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            margin-top: 10px;
+        }
     }
 
     a {
         margin-top: 170px;
-        margin-bottom: 165px;
         font-size: 18px;
         line-height: 26px;
         text-decoration: none;
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            margin-top: 125px;
+            font-size: 14px;
+            line-height: 20px;
+        }
 
         &:hover {
             text-decoration: underline;
