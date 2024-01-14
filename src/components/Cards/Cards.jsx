@@ -1,8 +1,8 @@
-import './Card.scss'
+import './Cards.scss'
 import logements from '../../logements.json'
 import { Link } from 'react-router-dom'
 
-function Card() {
+function Cards() {
     return <nav id="cards">
         {logements.map((logement) =>
             <Link key={`${logement.id}`} to={`/logement/${logement.id}`} className='card'>
@@ -14,4 +14,4 @@ function Card() {
     </nav>
 }
 
-export default Card
+export default Cards
