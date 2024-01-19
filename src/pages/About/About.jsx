@@ -1,11 +1,15 @@
-import "./About.scss"
-import Banner from '../../components/Banner/Banner'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
-import aboutImage from '../../assets/aboutImageBanner.png'
-import Collapse from '../../components/Collapse/Collapse'
+import "./About.scss";
+import { useEffect } from 'react';
+import Banner from '../../components/Banner/Banner';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import aboutImage from '../../assets/aboutImageBanner.png';
+import Collapse from '../../components/Collapse/Collapse';
 
 function About() {
+    useEffect(() => {
+        document.title = "A Propos de Kasa";
+    })
     return (
         <div>
             <Header />

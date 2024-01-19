@@ -21,14 +21,14 @@
     }
 
     .collapseBar p{
-        @media (max-width: map-get($breakpoints, mobile)) {
+        @media (max-width: map-get($breakpoints, tablet)) {
             font-size: 13px;
             font-weight: 500;
             line-height: 19px;
         }
     }
     .collapseContent{
-        @media (max-width: map-get($breakpoints, mobile)) {
+        @media (max-width: map-get($breakpoints, tablet)) {
             font-size: 12px;
             line-height: 17px;
         }

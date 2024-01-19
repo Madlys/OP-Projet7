@@ -65,10 +65,16 @@
 #logementInfosCollapse {
     display: flex;
     justify-content: space-between;
-    margin: 0 7% 0 7%;
+    margin: 5px 7% 0 7%;
+
+    .collapse {
+        margin: 0;
+        margin-bottom: 20px;
+    }
 
     @media (max-width: map-get($breakpoints, tablet)) {
         flex-direction: column;
+        margin-top: 20px;
     }
 
     >* {
@@ -101,6 +107,10 @@
             font-weight: 500;
             line-height: 19px;
         }
+    }
+
+    .contentDown {
+        height: 100%;
     }
 
     .collapseContent {

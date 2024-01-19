@@ -12,10 +12,6 @@ div #bannerWithText {
         height: 111px;
         margin-top: 5px;
     }
-
-    @media (max-width: map-get($breakpoints, mobile)) {
-        min-width: 256.28px;
-    }
 }
 
 div #bannerWithoutText {

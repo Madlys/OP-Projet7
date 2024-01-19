@@ -20,7 +20,7 @@
         font-weight: 500;
         color: white;
 
-        @media (max-width: map-get($breakpoints, mobile)) {
+        @media (max-width: map-get($breakpoints, tablet)) {
             font-family: Montserrat;
             font-size: 12px;
             font-weight: 500;
