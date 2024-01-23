@@ -39,7 +39,7 @@ function Logement() {
                     </div>
                 </div>
                 <div id="hostAndStars">
-                    <Host logement={logement}></Host>
+                    <Host logement={logement} />
                     <Stars logement={logement} />
                 </div>
             </div>
